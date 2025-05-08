@@ -1,7 +1,7 @@
 
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
+            --primary: #0056ff;
+            --primary-dark: #013467;
             --secondary: #f59e0b;
             --dark: #1e293b;
             --light: #f8fafc;
@@ -37,6 +37,7 @@
             width: 100%;
             z-index: 100;
         }
+
         
         nav {
             display: flex;
@@ -685,3 +686,27 @@
                 padding: 30px 20px;
             }
         }
+
+        .tabs {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          .tab-button {
+            border: none;
+            background: #eee;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-size: 16px;
+            border-radius: 5px;
+          }
+          .tab-button.active {
+            background: #0056ff;
+            color: white;
+          }
+          .tab-content {
+            display: none;
+          }
+          .tab-content.active {
+            display: block;
+          }
